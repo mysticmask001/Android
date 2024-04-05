@@ -53,246 +53,358 @@ class AssignmentActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun Ass() {
-Box( modifier = Modifier
-    .fillMaxSize()
-) {
-
-
-    Image(
-        painter = painterResource(
-            id = R.drawable.detect
-        ),
-        contentDescription = "null",
-        contentScale = ContentScale.Crop,
-        modifier = Modifier.fillMaxSize()
-    )
-
-    LazyColumn(
+    Box(
         modifier = Modifier
-            .background(Color.LightGray)
             .fillMaxSize()
-    ){
-        item {
-            Column(
-                modifier = Modifier
-                    .padding(10.dp)
-                    .fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+    ) {
 
-                Row(
-                    horizontalArrangement = Arrangement.SpaceEvenly,
+
+        Image(
+            painter = painterResource(
+                id = R.drawable.detect
+            ),
+            contentDescription = "null",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
+
+        LazyColumn(
+            modifier = Modifier
+                .background(Color.LightGray)
+                .fillMaxSize()
+        ) {
+            item {
+                Column(
                     modifier = Modifier
-                        .fillMaxWidth(),
+                        .padding(10.dp)
+                        .fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally
                 ) {
 
-                    Image(imageVector = Icons.Default.Home,
-                        contentDescription ="",
-                    )
-
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally
+                    Row(
+                        horizontalArrangement = Arrangement.SpaceEvenly,
+                        modifier = Modifier
+                            .fillMaxWidth(),
                     ) {
-                        Text(text = "Location")
 
-                        Row {
-                            Image(
-                                imageVector = Icons.Default.LocationOn,
-                                contentDescription ="",
-                                modifier = Modifier
-                                    .size(15.dp)
+                        Image(
+                            imageVector = Icons.Default.Home,
+                            contentDescription = "",
+                        )
 
-                            )
-                            Text(text = "Nairobi")
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text(text = "Location")
+
+                            Row {
+                                Image(
+                                    imageVector = Icons.Default.LocationOn,
+                                    contentDescription = "",
+                                    modifier = Modifier
+                                        .size(15.dp)
+
+                                )
+                                Text(text = "Nairobi")
+                            }
+
                         }
 
+                        Image(imageVector = Icons.Default.Settings, contentDescription = "")
+
                     }
-
-                    Image(imageVector = Icons.Default.Settings, contentDescription ="" )
-
-                }
 //
-                Spacer(modifier = Modifier.height(15.dp))
-                Spacer(modifier = Modifier.height(15.dp))
+                    Spacer(modifier = Modifier.height(15.dp))
+                    Spacer(modifier = Modifier.height(15.dp))
 
-
-                Row(
-                    horizontalArrangement = Arrangement.Absolute.SpaceEvenly
-                ) {
 
                     Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
+                    ) {
+
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
 //                        .border(
 //                            shape = RoundedCornerShape(5.dp)
 //                        )
 
-                    ) {
+                        ) {
 
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+
+
+                        Spacer(modifier = Modifier.width(25.dp))
+
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
+//                        .border(
+//                            shape = RoundedCornerShape(5.dp)
+//                        )
+
+                        ) {
+
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+
 
                     }
 
-
-                    Spacer(modifier = Modifier.width(25.dp))
-
                     Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
+                    ) {
+
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
 //                        .border(
 //                            shape = RoundedCornerShape(5.dp)
 //                        )
 
+                        ) {
+
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+
+
+
+                        Spacer(modifier = Modifier.width(25.dp))
+
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
+//                        .border(
+//                            shape = RoundedCornerShape(5.dp)
+//                        )
+
+                        ) {
+
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+
+
+                    }
+
+                    Row(
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
                     ) {
 
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
+//                        .border(
+//                            shape = RoundedCornerShape(5.dp)
+//                        )
+
+                        ) {
+
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+
+
+
+                        Spacer(modifier = Modifier.width(25.dp))
+
+
+
+                        Row(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .background(Color.LightGray)
+                                .shadow(elevation = 10.dp)
+//                        .border(
+//                            shape = RoundedCornerShape(5.dp)
+//                        )
+
+                        ) {
+
+                            Image(
+                                imageVector = Icons.Default.Home,
+                                contentDescription = "null"
+                            )
+                            Text(text = "Home")
+
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(25.dp))
+
+
+
+                    Row(
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
+                    ) {
+
+                        Row {
+
+
+                            Text(text = "Post")
+
+
+
+                            Spacer(modifier = Modifier.width(25.dp))
+
+
+
+                            Text(text = "View all!")
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(25.dp))
+
+
+
+                    Row(
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
+                    ) {
+
+                        Row(
+                            modifier = Modifier
+                                .size(140.dp)
+                        ) {
+                            Card(
+                                elevation = CardDefaults.cardElevation(40.dp)
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.beverly),
+                                    contentDescription = "null"
+                                )
+
+                                Text(text = "Beverly")
+
+
+                            }
+
+//
+                        }
+
+                        Spacer(modifier = Modifier.width(25.dp))
+
+
+                        Row(
+                            modifier = Modifier
+                                .size(140.dp)
+                        ) {
+                            Card(
+                                elevation = CardDefaults.cardElevation(40.dp)
+
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.beverly),
+                                    contentDescription = "null"
+                                )
+
+                                Text(text = "Beverly")
+
+
+                            }
+                        }
+
+
+                    }
+
+                    Spacer(modifier = Modifier.height(25.dp))
+
+
+
+                    Row(
+                        horizontalArrangement = Arrangement.Absolute.SpaceEvenly
+                    ) {
+
+                        Row(
+                            modifier = Modifier
+                                .size(140.dp)
+                        ) {
+                            Card(
+                                elevation = CardDefaults.cardElevation(40.dp)
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.beverly),
+                                    contentDescription = "null"
+                                )
+
+                                Text(text = "Beverly")
+
+
+                            }
+
+//
+                        }
+
+                        Spacer(modifier = Modifier.width(25.dp))
+
+
+                        Row(
+                            modifier = Modifier
+                                .size(140.dp)
+                        ) {
+                            Card(
+                                elevation = CardDefaults.cardElevation(40.dp)
+
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.beverly),
+                                    contentDescription = "null"
+                                )
+
+                                Text(text = "Beverly")
+
+
+                            }
+                        }
+
 
                     }
 
 
                 }
-
-                Row(
-                    horizontalArrangement = Arrangement.Absolute.SpaceEvenly
-                ) {
-
-                    Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
-//                        .border(
-//                            shape = RoundedCornerShape(5.dp)
-//                        )
-
-                    ) {
-
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
-
-                    }
-
-
-                    Spacer(modifier = Modifier.width(25.dp))
-
-                    Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
-//                        .border(
-//                            shape = RoundedCornerShape(5.dp)
-//                        )
-
-                    ) {
-
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
-
-                    }
-
-
-                }
-
-                Row(
-                    horizontalArrangement = Arrangement.Absolute.SpaceEvenly
-                ) {
-
-                    Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
-//                        .border(
-//                            shape = RoundedCornerShape(5.dp)
-//                        )
-
-                    ) {
-
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
-
-                    }
-
-
-                    Spacer(modifier = Modifier.width(25.dp))
-
-                    Row(
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .background(Color.LightGray)
-                            .shadow(elevation = 10.dp)
-//                        .border(
-//                            shape = RoundedCornerShape(5.dp)
-//                        )
-
-                    ) {
-
-                        Image(
-                            imageVector = Icons.Default.Home,
-                            contentDescription = "null"
-                        )
-                        Text(text = "Home")
-
-                    }
-
-
-                }
-
-                Row (
-                    horizontalArrangement = Arrangement.Absolute.SpaceEvenly
-                ){
-
-                    Text(text = "Post")
-
-
-
-                    Spacer(modifier = Modifier.width(25.dp))
-
-
-
-                    Text(text = "View all!")
-                }
-
-
-
-
-
-
-
             }
-
-
-
-
-
         }
-
-
     }
 }
-}
+
+
+
+
+
+
 
 
 

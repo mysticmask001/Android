@@ -160,7 +160,7 @@ fun Greeting() {
 
 
 
-                   val card = LocalContext.current
+                 val card = LocalContext.current
                    Button(onClick = {
 
                        card.startActivity(Intent(card, CardActivity::class.java))
@@ -172,6 +172,67 @@ fun Greeting() {
                        Text(text = "Card", color = Color.Blue)
 
                    }
+
+
+                val Ass = LocalContext.current
+                Button(onClick = {
+
+                    Ass.startActivity(Intent(Ass, AssignmentActivity::class.java))
+
+
+                }
+                ) {
+
+                    Text(text = "Ass", color = Color.Blue)
+
+                }
+
+
+
+                val Assign = LocalContext.current
+                Button(onClick = {
+
+                    Assign.startActivity(Intent(Assign, AssignmentActivity2::class.java))
+
+
+                }
+                ) {
+
+                    Text(text = "Ass2", color = Color.Blue)
+
+                }
+
+
+
+                val Grid = LocalContext.current
+                Button(onClick = {
+                    Grid.startActivity(Intent(Grid, GridActivity::class.java))
+
+
+                }
+                ) {
+
+                    Text(text = "Grid", color = Color.Blue)
+
+                }
+
+
+                val Griddy= LocalContext.current
+                Button(onClick = {
+
+                    Griddy.startActivity(Intent(Griddy, WebActivity::class.java))
+
+
+                }
+                ) {
+
+                    Text(text = "Web", color = Color.Blue)
+
+                }
+
+
+
+                
 
             }
         }

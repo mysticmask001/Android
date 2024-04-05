@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Overkill</string>
+    <string name="app_name">Overdose</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_image2">ImageActivity2</string>
     <string name="title_activity_input">InputActivity</string>
@@ -7,4 +7,9 @@
     <string name="title_activity_card">CardActivity</string>
     <string name="title_activity_grid">GridActivity</string>
     <string name="title_activity_assignment">AssignmentActivity</string>
+    <string name="title_activity_assignment2">AssignmentActivity2</string>
+    <string name="title_activity_project">ProjectActivity</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_wanderly">WanderlyActivity</string>
+    <string name="title_activity_wanderly2">WanderlyActivity2</string>
 </resources>
